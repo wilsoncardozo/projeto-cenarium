@@ -21,14 +21,14 @@ header #paisagem {
     height: 200px;
     width: 100vh;
     position: relative;
-    background-image: url(imagens/background002.jpg);
+    background-image: url('./imagens/background002.jpg');
 }
 
 header #logo {
     height: 70px;
     width: 100px;
     position: absolute;
-    background-image: url(imagens//Shape_black.jpg);
+    background-image: url('./imagens/Shape_black.jpg');
     left: 20px;
     top: 6%;
 }
@@ -116,7 +116,7 @@ section .img1 {
     left: 62vh;
     top: -300px;
     background-size: cover;
-    background-image: url(imagens/background002.jpg);
+    background-image: url('./imagens/background002.jpg');
 }
 
 section .img2 {
@@ -128,7 +128,7 @@ section .img2 {
     left: 98vh;
     top: -350px;
     transform: translate(-50%);
-    background-image: url(imagens/Shape_greenlight.jpg);
+    background-image: url('./imagens/Shape_greenlight.jpg');
 }
 
 .texto2 {
@@ -151,7 +151,7 @@ section .img2 {
     left: 10px;
     top: -250px;
     transform: translate(-150%);
-    background-image: url(imagens/Shape_black.jpg);
+    background-image: url('./imagens/Shape_black.jpg');
 }
 
 section .texto3 {
@@ -271,7 +271,7 @@ footer {
 .redesocial {
     display: inline-block;
     position: relative;
-    background-image: url(imagens/social.png);
+    background-image: url('./imagens/social.png');
     background-size: cover;
     background-color: black;
     height: 28px;
