@@ -12,11 +12,17 @@ body{
 
 main {
     min-width: 380px;
-    width: 100vh;
+    max-width: 1000px;
     background-color: rgba(211, 211, 211, 0.431);
     margin: auto;
 }
+header {
+    display: flex;
+    position: relative;
+    justify-content: center;
 
+
+}
 header #paisagem {
     height: 200px;
     width: 100vh;
@@ -25,20 +31,23 @@ header #paisagem {
 }
 
 header #logo {
+    display: flex;
+    position: relative;
     height: 70px;
     width: 100px;
-    position: absolute;
     background-image: url('./imagens/Shape_black.jpg');
-    left: 20px;
+    left: -200px;
     top: 6%;
 }
 
 nav {
+    display: flex;
+    position: relative;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 1.2em;
     width: 100%;
-    padding: 10px;
 }
 
 nav > a {
