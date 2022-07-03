@@ -1,10 +1,14 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding:0px;
+    box-sizing: border-box;
 }
+
 body{
     background-attachment: fixed;
     background-color: rgba(211, 211, 211, 0.431);
@@ -12,67 +16,73 @@ body{
 
 main {
     min-width: 380px;
-    max-width: 1000px;
-    background-color: rgba(211, 211, 211, 0.431);
+    max-width: 1200px;
+    background-color: rgba(211, 211, 211, 0.192);
     margin: auto;
-}
-header {
-    display: flex;
-    position: relative;
-    justify-content: center;
-
-
-}
-header #paisagem {
-    height: 200px;
-    width: 100vh;
-    position: relative;
-    background-image: url('./imagens/background002.jpg');
-}
-
-header #logo {
-    display: flex;
-    position: relative;
-    height: 70px;
-    width: 100px;
-    background-image: url('./imagens/Shape_black.jpg');
-    left: -200px;
-    top: 6%;
 }
 
 nav {
     display: flex;
     position: relative;
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 1.2em;
     width: 100%;
 }
 
 nav > a {
-    color: gray;
+    color: rgb(57, 89, 79);
     text-decoration: none;
     padding: 30px;
 }
 
 nav > a:hover {
-    color: black;
+    color: rgb(131, 148, 144);
 }
 
-section {
-    padding-top: 80px;
+
+/*
+HEADER NÃO PERMANECE CENTRALIZADO. SE DESLOCA QUANDO AUMENTO A JANELA.
+*/
+
+div#paisagem {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('./imagens/foto-principal2.JPG');
+    background-position: center center;
+}
+
+.logo {
+    display: flex;
+    position: static;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+.logo img {
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 143px;
+    border-radius: 5px 5px 5px 5px;
+
 }
 
 .inspiracao {
     display: flex;
     padding-top: 0px;
+    background-color: white;
 }
 
 .inspiracao h1 {
     background-color: white;
-    color: black;
-    font-size: 11vw;
+    color: rgb(131, 148, 144);
+    font-size: 10vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     max-width: 90%;
     padding: 100px 0px 50px 10px;
@@ -81,7 +91,7 @@ section {
 }
 
 section h1 span {
-    color: darkgrey;
+    color: rgba(169, 169, 169, 0.709);
     background-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -89,85 +99,77 @@ section h1 span {
 .inspiracao p {
     width: 50vh;
     padding-left: 50px;
+    font-size: 24px;
 }
 
-.natureza {
-    margin: auto;
-    height: 930px;
-}
-
-section h2 {
+.texto1 {
+    font-family: 'Poppins', sans-serif;
     background-color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 2.5em;
-    font-size: 2.5em;
-    color: rgba(0, 0, 0, 0.629);
-    padding-left: 10px;
-}
-
-section .texto1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
-    font-size: 2.5vh;
     text-align: justify;
     color: grey;
     height: 950px;
     width: 100%;
     padding: 0px 100px 30px 20px;
-
 }
 
-section .img1 {
+.escada {
     display: flex;
     position: relative;
-    height: 300px;
-    width: 450px;
-    left: 62vh;
-    top: -300px;
-    background-size: cover;
-    background-image: url('./imagens/background002.jpg');
+    background-color: transparent;
+    background-image: url('./imagens/fotos-escada.png');
+    height: 920px;
+    width: 100%;
+    margin-left: -450px;
+    background-repeat: no-repeat;
 }
 
-section .img2 {
-    display: flex;
-    position: relative;
-    padding-bottom: 5px;
-    height: 450px;
-    width: 300px;
-    left: 98vh;
-    top: -350px;
-    transform: translate(-50%);
-    background-image: url('./imagens/Shape_greenlight.jpg');
-}
-
-.texto2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+h2 {
     background-color: white;
-    font-size: 1.5em;
-    text-align: justify;
-    color: grey;
-    padding-top: 180px;
-    padding-right: 30px;
-    padding-left: 450px;
-    padding-bottom: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5em;
+    color: rgb(57, 89, 79);
+    padding: 40px 0px 60px 15px;
 }
 
-.img3 {
-    display: flex;
-    position: relative;
-    height: 500px;
-    width: 300px;
-    left: 10px;
-    top: -250px;
-    transform: translate(-150%);
-    background-image: url('./imagens/Shape_black.jpg');
+.segundoh2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 3em;
+
 }
 
-section .texto3 {
+section#paralax {
+    color: white;
+    background-image: url('./imagens/paralax.JPG');
+    background-position: right center;
+}
+
+section.natureza {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.489);
+    height: 600px;
+}
+
+section.natureza > p {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.245);
+    height: 350px;
+    width: 500px;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+.texto3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     text-align: center;
-    color: grey;
+    color: rgb(57, 89, 79);
     background-color: rgba(211, 211, 211, 0.645);
     border-radius: 10px;
     max-width: 60%;
@@ -176,24 +178,38 @@ section .texto3 {
 }
 
 .galeria {
-    display: block;
+    display: flex;
     position: relative;
-    height: 400px;
-    width: 100vh;
-    padding-top: 5px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+/*Parte do código que busquei no Google para por zoom na galeria*/
+    overflow: hidden;
+ 
 }
+
+.galeria img {
+    display: flex;
+    position: relative;
+    height: 175px;
+    width: 183px;
+    border-radius: 5px 5px 5px 5px;
+/*Parte do código que busquei no Google para por zoom na galeria*/
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.galeria:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
 
 .fotos {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    
-}
-
-.foto3 {
-    display: flex;
-    height: 275px;
-    width: 275px;
+    padding: 10px;
 }
 
 .finalizando {
@@ -205,7 +221,7 @@ section .texto3 {
 .final {
     display: inline-block;
     position: relative;
-    color: gray;
+    color: rgb(57, 89, 79);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -218,7 +234,7 @@ section .texto3 {
 
 .final a {
     text-decoration: none;
-    color: gray;
+    color: rgb(57, 89, 79);
 }
 
 .final a:hover {
@@ -231,7 +247,7 @@ section .texto3 {
     padding-bottom: 5px;
     height: 200px;
     width: 350px;
-    left: 60vh;
+    left: 75vh;
     top: -180px;
     transform: translate(-30%);
 }
@@ -248,7 +264,7 @@ section .texto3 {
 footer {
     background-color: black;
     padding: 0px;
-    width: 100vh;
+    width: 1200px;
     margin: auto;
 }
 
