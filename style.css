@@ -11,7 +11,7 @@
 
 body{
     background-attachment: fixed;
-    background-color: rgba(211, 211, 211, 0.431);
+
 }
 
 main {
@@ -27,50 +27,38 @@ nav {
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 1.2em;
+    background-color: #0C3029;
+    font-size: 1.1em;
     width: 100%;
+    height: 160px;
 }
 
 nav > a {
-    color: rgb(57, 89, 79);
+    color: rgb(249, 249, 249);
     text-decoration: none;
-    padding: 30px;
+    padding: 20px;
+    margin: auto;
 }
 
 nav > a:hover {
-    color: rgb(131, 148, 144);
+    color: #839490;
 }
 
+img.logo {
+    display: flex;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+}
 
-/*
-HEADER NÃO PERMANECE CENTRALIZADO. SE DESLOCA QUANDO AUMENTO A JANELA.
-*/
-
-div#paisagem {
+.cenarium img {
     display: flex;
     position: relative;
     justify-content: center;
-    height: 300px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-image: url('./imagens/foto-principal2.JPG');
-    background-position: center center;
-}
-
-.logo {
-    display: flex;
-    position: static;
-    justify-content: center;
-    padding-top: 7px;
-}
-
-.logo img {
-    display: flex;
-    position: relative;
-    height: 80px;
-    width: 143px;
-    border-radius: 5px 5px 5px 5px;
-
+    object-fit: contain;
+    margin-bottom: 80px;
 }
 
 .inspiracao {
@@ -82,22 +70,21 @@ div#paisagem {
 .inspiracao h1 {
     background-color: white;
     color: rgb(131, 148, 144);
-    font-size: 10vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6em;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     max-width: 90%;
-    padding: 100px 0px 50px 10px;
-    margin-left: 10px;
     margin: auto;
 }
 
 section h1 span {
     color: rgba(169, 169, 169, 0.709);
     background-color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .inspiracao p {
-    width: 50vh;
+    margin-top: 70px;
+    width: 600px;
     padding-left: 50px;
     font-size: 24px;
 }
@@ -112,22 +99,42 @@ section h1 span {
     padding: 0px 100px 30px 20px;
 }
 
-.escada {
-    display: flex;
-    position: relative;
-    background-color: transparent;
-    background-image: url('./imagens/fotos-escada.png');
-    height: 920px;
-    width: 100%;
-    margin-left: -450px;
-    background-repeat: no-repeat;
+div.bolas {
+
+}
+
+.bola3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50%;
+    margin-left: 80px;
+    margin-top: 180px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
+}
+
+.bola2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50%;
+    margin-right: 20px;
+    margin-top: 80px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
+}
+
+.bola1 {
+    width: 400px;
+    height: 400px;
+    border-radius: 50% 50%;
+    margin-right: 20px;
+    margin-top: 180px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
 }
 
 h2 {
     background-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2.5em;
-    color: rgb(57, 89, 79);
+    font-size: 48px;
+    color: #839490;
     padding: 40px 0px 60px 15px;
 }
 
@@ -170,7 +177,7 @@ section.natureza > p {
     font-size: 1.5em;
     text-align: center;
     color: rgb(57, 89, 79);
-    background-color: rgba(211, 211, 211, 0.645);
+    background-color: #E2E6E0;
     border-radius: 10px;
     max-width: 60%;
     padding: 20px;
@@ -204,7 +211,7 @@ section.natureza > p {
 .galeria:hover img {
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
 
