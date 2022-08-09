@@ -11,9 +11,40 @@
 <body>
     <header>
         <nav>
-            <span class="logo-txt">
-                <img class="logo" src="imagens/logo.png" alt="logo">
-                <p>Residencial Cenarium</p>
+            <span class="logo">
+                <img class="logo-img" src="imagens/logo.png" alt="logo">
+                <p class="logo-txt">Residencial Cenarium</p>
+            </span>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="area-do-usuario.html">Área do usuário</a></li>
+            </ul>
+        </nav>
+            <!-- <div class="cenarium">
+                <img src="imagens/foto-principal.jpg" alt="foto-capa">
+            </div> -->
+
+            <picture class="cenarium">
+                <source media="(max-width: 768px)" srcset="imagens/foto-principal-pq.jpg" type="image/jpg">
+                <img src="imagens/foto-principal.jpg" alt="Foto do empreendimento">
+            </picture>
+    
+            <h1>Inspire<span>-se</span></h1>
+    </header>
+    <!-- <header>
+        <nav>
+            <span class="logo">
+                <img class="logo-img" src="imagens/logo.png" alt="logo">
+                <p class="logo-txt">Residencial Cenarium</p>
             </span>
             <a href="index.html">Home</a>
             <a href="quem-somos.html">Quem somos</a>
@@ -26,19 +57,19 @@
         </div>
 
         <h1>Inspire<span>-se</span></h1>
-    </header>
+    </header> -->
   
     <main>
         <section class="inspiracao">
             <div>
                 <p>Boas práticas junto a natureza. Esse é o nosso comprometimento.<br> Nosso residencial cultiva um corredor verde harmonizando fauna e flora. <br> Olhamos para um futuro onde as pessoas estejam fortemente engajadas e totalmente integradas ao ecossistema, preservando o meio ambiente como um presente para novas gerações.
-                <img class="bola1"src="imagens/bola1.jpeg" alt="">
+                <img class="bola1"src="imagens/bola3.jpeg" alt="">
                 </p>
             </div>
 
             <div class="bolas">
-                <img class="bola3" src="imagens/bola3.jpeg" alt="">
-                <img class="bola2"src="imagens/bola2.jpeg" alt="">
+                <img class="bola3" src="imagens/image6.jpg" alt="">
+                <img class="bola2"src="imagens/image15.jpg" alt="">
             </div>
         </section>
         
@@ -103,13 +134,28 @@
 
     <div class="final">
         <span class="texto-a-esquerda">
-        <p>Termos de uso &nbsp | &nbsp Política de privacidade</p>
+        <p>Nossa política de privacidade</p>
         </span>
         <img class="logo-rodape" src="imagens/logo.png" alt="logo">
         <span class="texto-a-direita">
         <p>Desenvolvido por <a href="https://panabaker.com.br">PWA WEB</a></p>
         </span>
     </div>
+
+    <!-- <div class="final-mobile">
+        <img class="logo-rodape" src="imagens/logo.png" alt="logo">
+        <span class="texto-a-esquerda">
+        <p>Nossa política de privacidade</p>
+        </span>
+        <span class="texto-a-direita">
+        <p>Desenvolvido por <a href="https://panabaker.com.br">PWA WEB</a></p>
+        </span>
+    </div> -->
+
+
    </footer>
+
+   <script src="script.js"></script>
+
 </body>
 </html>

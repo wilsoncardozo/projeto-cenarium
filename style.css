@@ -22,9 +22,9 @@ body{
 }
 
 main {
-    min-width: 380px;
+    /* min-width: 380px;
     max-width: 1200px;
-    margin: auto;
+    margin: auto; */
 }
 
 nav {
@@ -32,38 +32,182 @@ nav {
     position: relative;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
     background-color: #0C3029;
-    font-size: 1.03em;
     width: 100%;
     height: 180px;
 }
 
-nav > a {
+nav a {
     color: var(--cor1);
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     margin: auto;
 }
 
-nav > a:hover {
+nav a:hover {
     color: var(--cor0);
     text-decoration: underline;
 }
 
-.logo {
+ul.nav-list {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 0.9em;
+    width: 100%;
+
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    display: flex;
+    width: 25px;
+    height: 2.1px;
+    background: var(--cor0);
+    margin: 3px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* Mobile: */
+
+@media (max-width: 830px) {
+    span.logo {
+        margin-right: 20px;
+    }
+    
+    .nav-list a {
+       padding: 10px;
+    }
+}
+
+  @media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+        margin-top: 0;
+    }
+
+    header {
+        padding-bottom: 25px;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-list a {
+        position: absolute;
+        text-transform: uppercase;
+        color: var(--cor0);
+        width: 180px;
+    }
+
+    ul.nav-list {
+        position: fixed;
+        top: 0vh;
+        right: 0;
+        width: 80vw;
+        height: 100vh;
+        opacity: 95%;
+        padding: 80px 0px 120px;
+        background:#13544d;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    ul.nav-list.active {
+        transform: translateX(0);
+        padding-left: 40px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 25px;
+        top: 90px;
+        right: 40px;
+        z-index: 1;
+    }
+
+    
+}
+  
+
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+}
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-3px, -4px);
+}
+/* End of menus */
+
+
+
+
+
+
+
+span.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 45px;
+    margin-left: 20px;
+    width: 280px;
+}
+
+.logo-img {
     display: flex;
     position: relative;
     width: 130px;
     height: 130px;
-    padding-top: 10px;
-    margin: auto;
+
 }
 
 .logo-txt {
     font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    text-align: center;
+    white-space: nowrap;
     color: var(--cor0);
-    padding-left: 20px;
-    font-size: 0.93em;
+    font-size: 1.1em;
+    
+}
+div .cenarium {
+    height: 300px;
+    object-fit: fill;
 }
 
 .cenarium img {
@@ -71,7 +215,7 @@ nav > a:hover {
     position: relative;
     justify-content: center;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 h1 {
@@ -135,6 +279,7 @@ h1 span {
     margin-left: 80px;
     margin-top: 100px;
     box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
+    object-fit: cover;
 }
 
 h2 {
@@ -156,14 +301,15 @@ h2 {
 section#paralax {
     color: white;
     background-image: url('./imagens/paralax.JPG');
-    background-position: right center;
+    background-position: center;
 }
 
 section.natureza {
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.489);
-    height: 600px;
+    height: 800px;
+    width: 100vw;
 }
 
 section.natureza > p {
@@ -172,7 +318,7 @@ section.natureza > p {
     font-size: 30px;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.245);
-    height: 350px;
+    height: 500px;
     width: 500px;
     padding-top: 40px;
     padding-left: 20px;
@@ -288,8 +434,15 @@ div.final {
     align-items: center;
     background-color: #0C3029;
     padding: 50px;
-    height: 140px;
+    height: 130px;
 }
+
+div.final p {
+    width: 200px;
+    text-align: center;
+}
+
+
 
 .texto-a-esquerda {
     display: inline-block;
@@ -303,8 +456,8 @@ div.final {
 
 img.logo-rodape {
     display: flex;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 /* QUEM SOMOS */
@@ -459,8 +612,16 @@ Texto tem um erro de português
     display: flex;
     margin: auto;
     width: 70vw;
+    max-width: 900px;
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .usuario img {
+        width: 90vw;
+    }
+
 }
 
 /* GALERIA */
@@ -492,6 +653,7 @@ Texto tem um erro de português
     object-fit: cover;
     transition: transform .2s;
     border: 2px solid white;
+    box-shadow: 5px 8px 5px -9px rgba(0, 0, 0, 0.667);
 }
 
 .item-galeria img:hover {
