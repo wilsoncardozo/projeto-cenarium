@@ -72,6 +72,330 @@ ul.nav-list {
     border-radius: 10px;
 }
 
+span.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 45px;
+    margin-left: 20px;
+    width: 280px;
+}
+
+.logo-img {
+    display: flex;
+    position: relative;
+    width: 130px;
+    height: 130px;
+
+}
+
+.logo-txt {
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--cor0);
+    font-size: 1.1em;
+    
+}
+div .cenarium {
+    height: 300px;
+    object-fit: fill;
+}
+
+.cenarium img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    object-fit: fill;
+}
+
+h1 {
+    background-color: white;
+    color: rgb(131, 148, 144);
+    font-size: 6em;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    max-width: 100%;
+}
+
+h1 span {
+    color: rgba(169, 169, 169, 0.709);
+    background-color: white;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.inspiracao {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-top: 0px;
+    background-color: white;
+}
+
+/* #home {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+.inspiracao p {
+    margin-top: 70px;
+    width: 600px;
+    padding: 0px 40px;
+    margin-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    background-color: white;
+    text-align: justify;
+    color: grey;
+    height: 600px;
+}
+
+div.bolas {
+    display: flex;
+    flex-direction: column;
+}
+
+.bola1 {
+    display: block;
+    width: 400px;
+    height: 400px;
+    border-radius: 50% 50%;
+    margin-left: 150px;
+    margin-top: 50px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
+}
+
+.bola2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50%;
+    margin-right: 150px;
+    margin-top: 70px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
+}
+
+.bola3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50% 50%;
+    margin-left: 110px;
+    margin-top: 100px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
+    object-fit: cover;
+}
+
+h2 {
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    color: #839490;
+    padding: 60px 0px 60px 15px;
+}
+
+section#paralax {
+    color: white;
+    background-image: url('./imagens/paralax.JPG');
+    background-position: center;
+}
+
+section.natureza {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.489);
+    height: 800px;
+    width: 100vw;
+}
+
+section.natureza > p {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.245);
+    height: 500px;
+    width: 500px;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+h2.segundoh2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 3em;
+}
+
+.frase-estrutura1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: var(--cor1);
+    text-align: center;
+}
+
+p.frase-estrutura2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: var(--cor1);
+    text-align: center;
+    margin-top: 60px;
+}
+
+p.frase-estrutura2 a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+p.frase-estrutura2 a:hover {
+    background: var(--cor0);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+
+.icos {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+/*Parte do código que busquei no Google para por zoom na galeria*/
+    overflow: hidden;
+}
+
+.icos p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #39594f;
+}
+
+.icos img {
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    margin: 30px;
+    border-radius: 5px 5px 5px 5px;
+/*Parte do código que busquei no Google para por zoom na galeria*/
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.icos:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+article.texto3 {
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.texto3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #39594f;
+    background-color: var(--cor0);
+    border-radius: 10px;
+    max-width: 50%;
+    padding: 20px;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+footer a {
+    color: var(--cor1);
+}
+
+footer a:hover {
+    color: white;
+}
+
+div.localizacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor0);
+    height: 400px;
+}
+
+.endereco {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    line-height: 2.5em;
+    color: #39594f;
+    padding: 40px;
+}
+
+.endereco a {
+    text-decoration: none;
+    color: #39594f;
+}
+
+.endereco a:hover {
+    text-decoration: underline;
+    color: #39594f;
+}
+
+.google iframe{
+    display: inline-block;
+    height: 250px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+div.final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C3029;
+    padding: 50px;
+    height: 130px;
+}
+
+div.final p {
+    width: 200px;
+    text-align: center;
+}
+
+
+
+.texto-a-esquerda {
+    display: inline-block;
+    color: var(--cor0);
+}
+
+.texto-a-direita {
+    display: inline-block;
+    color: var(--cor1);
+}
+
+img.logo-rodape {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+
 /* Mobile: */
 
 @media (max-width: 830px) {
@@ -147,19 +471,22 @@ ul.nav-list {
     }
 
     .inspiracao div p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+        display: block;
         padding: 10px;
-        width: 320px;
+        width: 80vw;
         font-size: 4vw;
+        margin: auto;
+        margin-bottom: 50px;
     }
 
-    img.bola1 {
-        width: 90vw;
+    .inspiracao.bola1 {
+        display: block;
+        max-width: 95vw;
+        width: 350px;
+        height: 350px;
         object-fit: cover;
+        margin: auto;
+        margin-top: 80px;
     }
 
     div.localizacao {
@@ -195,292 +522,6 @@ ul.nav-list {
 
 
 
-
-
-
-
-span.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    margin-right: 45px;
-    margin-left: 20px;
-    width: 280px;
-}
-
-.logo-img {
-    display: flex;
-    position: relative;
-    width: 130px;
-    height: 130px;
-
-}
-
-.logo-txt {
-    font-family: 'Poppins', sans-serif;
-    text-transform: none;
-    text-align: center;
-    white-space: nowrap;
-    color: var(--cor0);
-    font-size: 1.1em;
-    
-}
-div .cenarium {
-    height: 300px;
-    object-fit: fill;
-}
-
-.cenarium img {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    width: 100%;
-    object-fit: fill;
-}
-
-h1 {
-    background-color: white;
-    color: rgb(131, 148, 144);
-    font-size: 6em;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    padding-top: 40px;
-    max-width: 100%;
-}
-
-h1 span {
-    color: rgba(169, 169, 169, 0.709);
-    background-color: white;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-}
-
-.inspiracao {
-    display: flex;
-    padding-top: 0px;
-    background-color: white;
-}
-
-.inspiracao p {
-    margin-top: 70px;
-    width: 600px;
-    padding: 0px 40px;
-    margin-left: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    background-color: white;
-    text-align: justify;
-    color: grey;
-    height: 950px;
-}
-
-.bola1 {
-    display: block;
-    width: 400px;
-    height: 400px;
-    border-radius: 50% 50%;
-    margin-left: 100px;
-    margin-top: 50px;
-    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
-}
-
-.bola2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50% 50%;
-    margin-right: 150px;
-    margin-top: 70px;
-    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
-}
-
-.bola3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50% 50%;
-    margin-left: 80px;
-    margin-top: 100px;
-    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.667);
-    object-fit: cover;
-}
-
-h2 {
-    background-color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 48px;
-    color: #839490;
-    padding: 40px 0px 60px 15px;
-}
-
-.segundoh2 {
-    text-align: center;
-    margin-top: 20px;
-    padding-bottom: 40px;
-    font-size: 3em;
-
-}
-
-section#paralax {
-    color: white;
-    background-image: url('./imagens/paralax.JPG');
-    background-position: center;
-}
-
-section.natureza {
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.489);
-    height: 800px;
-    width: 100vw;
-}
-
-section.natureza > p {
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.245);
-    height: 500px;
-    width: 500px;
-    padding-top: 40px;
-    padding-left: 20px;
-    margin-top: 110px;
-    margin-left: 30px;
-}
-
-.icos {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    background-color: white;
-    border-radius: 5px;
-/*Parte do código que busquei no Google para por zoom na galeria*/
-    overflow: hidden;
-}
-
-.icos p {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: #39594f;
-}
-
-.icos img {
-    display: flex;
-    position: relative;
-    height: 80px;
-    width: 80px;
-    margin: 30px;
-    border-radius: 5px 5px 5px 5px;
-/*Parte do código que busquei no Google para por zoom na galeria*/
-    max-width: 100%;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.icos:hover img {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.1);
-}
-
-article.texto3 {
-    display: block;
-    margin: auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
-.texto3 {
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    color: #39594f;
-    background-color: var(--cor0);
-    border-radius: 10px;
-    max-width: 45%;
-    padding: 20px;
-}
-
-footer {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.7em;
-    width: 100%;
-}
-
-footer a {
-    color: var(--cor1);
-}
-
-footer a:hover {
-    color: white;
-}
-
-div.localizacao {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--cor0);
-    height: 400px;
-}
-
-.endereco {
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6em;
-    line-height: 2.5em;
-    color: #39594f;
-    padding: 40px;
-}
-
-.endereco a {
-    text-decoration: none;
-    color: #39594f;
-}
-
-.endereco a:hover {
-    text-decoration: underline;
-    color: #39594f;
-}
-
-.google iframe{
-    display: inline-block;
-    height: 250px;
-    width: 450px;
-    border-radius: 5px;
-}
-
-div.final {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0C3029;
-    padding: 50px;
-    height: 130px;
-}
-
-div.final p {
-    width: 200px;
-    text-align: center;
-}
-
-
-
-.texto-a-esquerda {
-    display: inline-block;
-    color: var(--cor0);
-}
-
-.texto-a-direita {
-    display: inline-block;
-    color: var(--cor1);
-}
-
-img.logo-rodape {
-    display: flex;
-    width: 100px;
-    height: 100px;
-}
-
 /* QUEM SOMOS */
 
 #quem-somos {
@@ -497,9 +538,9 @@ h3 {
     font-size: 3em;
 }
 
-.paralax2 p {
+.somos p {
     display: block;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: justify;
     color: var(--cor0);
     font-size: 2em;
@@ -525,18 +566,15 @@ p.tres {
 
 @media (max-width: 768px) {
     p.um, p.dois, p.tres {
+        display: block;
         margin: auto;
         margin-bottom: 20px;
         padding: 10px;
-        font-size: 5vw;
+        font-size: 23px;
+        width: 310px;
     }
 
-    .paralax2 p {
-        width: 320px;
-
-    }
-
-    .paralax2 h3 {
+    .somos h3 {
         margin-top: 30px;
         padding-bottom: 30px;
     }
@@ -546,12 +584,39 @@ p.tres {
 
 /* GALERIA */
 
-.texto-galeria {
+/* .texto-galeria {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
     color: var(--cor1);
     padding: 40px 0px;
     text-align: center;
+} */
+
+h2.galeriah2 {
+    font-size: 4em;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+h2.galeriah2 span {
+    color: rgba(169, 169, 169, 0.709);
+    background-color: white; 
+}
+
+.icos-galeria {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.icos-galeria img {
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    border-radius: 5px 5px 5px 5px;
+    max-width: 100%;
 }
 
 .container-galeria {
