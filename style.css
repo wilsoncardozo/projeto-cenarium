@@ -449,6 +449,7 @@ img.logo-rodape {
     ul.nav-list.active {
         transform: translateX(0);
         padding-left: 40px;
+        z-index: 1000;
     }
 
     .mobile-menu {
@@ -458,7 +459,7 @@ img.logo-rodape {
         width: 25px;
         top: 90px;
         right: 40px;
-        z-index: 1;
+        z-index: 1100;
     }
 
     header h1 {
@@ -594,7 +595,7 @@ p.tres {
 } */
 
 h2.galeriah2 {
-    font-size: 4em;
+    font-size: 4rem;
     text-align: center;
     padding-bottom: 0px;
 }
@@ -652,6 +653,11 @@ h2.galeriah2 span {
 }
 
 @media (max-width: 768px) {
+    
+    h2.galeriah2 {
+        font-size: 3.2rem;
+        padding-top: 10px;
+    }
     .container-galeria {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 50vh;
@@ -659,7 +665,23 @@ h2.galeriah2 span {
 
     .w-2 {
         grid-column: span 1;
-    } 
+    }
+
+    .lightbox, .lightbox:target {
+        display: none;
+    }
+
+    img.img-galeria {
+        cursor: default;
+    }
+
+    .icos-galeria img {
+        height: 40px;
+        width: 40px;
+        margin: 15px;
+        max-width: 100%;
+    }
+
 }
 
 .lightbox {
