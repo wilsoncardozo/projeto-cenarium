@@ -527,6 +527,7 @@ img.logo-rodape {
 #quem-somos {
     background-image: url('./imagens/quemsomos.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h3 {
