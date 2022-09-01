@@ -319,6 +319,7 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.7em;
     width: 100%;
+    clear: both;
 }
 
 footer a {
@@ -377,8 +378,6 @@ div.final p {
     text-align: center;
 }
 
-
-
 .texto-a-esquerda {
     display: inline-block;
     color: var(--cor0);
@@ -394,7 +393,6 @@ img.logo-rodape {
     width: 100px;
     height: 100px;
 }
-
 
 /* Mobile: */
 
@@ -495,7 +493,7 @@ img.logo-rodape {
         flex-direction: column;
     }
 }
-  
+
   
   @keyframes navLinkFade {
     from {
@@ -522,7 +520,6 @@ img.logo-rodape {
 /* End of menus */
 
 
-
 /* QUEM SOMOS */
 
 #quem-somos {
@@ -533,7 +530,7 @@ img.logo-rodape {
 
 h3 {
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     color: var(--cor0);
     margin-top: 80px;
     padding-bottom: 80px;
@@ -553,35 +550,60 @@ h3 {
 
 p.um {
     display: flex;
-    margin-left: 30px;
+    margin-left: 50px;
+    margin-bottom: 40px;
 }
 
 p.dois {
     display: flex;
-    margin-left: 500px;
+    height: 375px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 p.tres {
     display: flex;
-    margin-left: 250px;
+    float: right;
+    margin-right: 50px;
 }
 
 @media (max-width: 768px) {
-    p.um, p.dois, p.tres {
-        display: block;
-        margin: auto;
-        margin-bottom: 20px;
-        padding: 10px;
-        font-size: 23px;
-        width: 310px;
-    }
-
-    .somos h3 {
-        margin-top: 30px;
-        padding-bottom: 30px;
-    }
+#quem-somos {
+    background-position: right, center;
 }
 
+/* p.um, p.dois, p.tres {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 310px;
+
+    SUBSTITUÍ PELA DECLARAÇÃO (.somos p)
+} */
+
+.somos h3 {
+    font-size: 2.8rem;
+    color: var(--cor0);
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.somos p {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 310px;
+}
+p.tres {
+    display: flex;
+    float: none;
+}
+}
 
 
 /* GALERIA */
@@ -678,7 +700,7 @@ h2.galeriah2 span {
     .icos-galeria img {
         height: 40px;
         width: 40px;
-        margin: 15px;
+        margin: 10px;
         max-width: 100%;
     }
 
@@ -712,7 +734,7 @@ h2.galeriah2 span {
 .close {
     display: block;
     position: absolute;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.3em;
     top: 40px;
@@ -760,7 +782,7 @@ h4 {
 }
 
 .contato-form p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     color: var(--cor1);
     padding-bottom: 30px;
@@ -843,6 +865,14 @@ textarea::placeholder {
     transition: 200ms ease;
 }
 
+@media (max-width: 768px) {
+.contato-form p {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+}
+
 /* ÁREA DO USUÁRIO 
 Texto tem um erro de português
 */
@@ -861,8 +891,8 @@ Texto tem um erro de português
 }
 
 @media (max-width: 768px) {
-    .usuario img {
-        width: 90vw;
-    }
-
+.usuario img {
+    width: 90vw;
+    margin-top: 50px;
+}
 }
