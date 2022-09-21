@@ -361,7 +361,6 @@ div.localizacao {
     display: inline-block;
     height: 250px;
     width: 450px;
-    border-radius: 5px;
 }
 
 div.final {
@@ -469,17 +468,22 @@ img.logo-rodape {
         display: none;
     }
 
-    .inspiracao div p {
-        display: block;
-        padding: 10px;
-        width: 80vw;
-        font-size: 4vw;
-        margin: auto;
-        margin-bottom: 50px;
+    .inspiracao {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
-    .inspiracao.bola1 {
-        display: block;
+    .inspiracao div p {
+        padding: 10px;
+        width: 40vw;
+        font-size: 4vw;
+        margin-bottom: 50px;
+        margin-left: 40px;
+    }
+
+    img.bola1 {
         max-width: 95vw;
         width: 350px;
         height: 350px;
@@ -488,9 +492,57 @@ img.logo-rodape {
         margin-top: 80px;
     }
 
+    .icos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icos img {
+        height: 40px;
+        width: 40px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .icos p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .texto3 {
+        max-width: 90%;
+    }
+
+    .google iframe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        height: 300px;
+        padding-bottom: 50px;
+    }
+
     div.localizacao {
         display: flex;
         flex-direction: column;
+        height: 500px;
+        text-align: center;
+    }
+
+    img.logo-rodape {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        margin: 10px 0px;
+    }
+
+    div.final {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
