@@ -576,6 +576,7 @@ img.logo-rodape {
     background-image: url('./imagens/quemsomos.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: fixed;
 }
 
 h3 {
