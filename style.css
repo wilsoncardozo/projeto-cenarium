@@ -592,7 +592,7 @@ img.logo-rodape {
 
 #quem-somos {
     background-image: url('./imagens/quemsomos.jpg');
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -639,6 +639,7 @@ p.tres {
 #quem-somos {
     background-position: right, center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 /* p.um, p.dois, p.tres {
