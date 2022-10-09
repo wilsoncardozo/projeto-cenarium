@@ -638,7 +638,7 @@ p.tres {
 @media (max-width: 768px) {
 #quem-somos {
     background-position: right, center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
 }
 
