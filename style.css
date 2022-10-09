@@ -369,6 +369,14 @@ img.logo-rodape {
 
 /* Mobile: */
 
+@media (max-width: 1024px) {
+    section#paralax {
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 @media (max-width: 800px) {
     span.logo {
         margin-right: 20px;
@@ -455,12 +463,6 @@ img.logo-rodape {
 
     .bolas img {
         display: none;
-    }
-
-    section#paralax {
-        background-attachment: scroll;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     section.natureza p {
