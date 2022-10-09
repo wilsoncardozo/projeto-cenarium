@@ -576,7 +576,6 @@ img.logo-rodape {
     background-image: url('./imagens/quemsomos.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
 }
 
 h3 {
@@ -621,6 +620,7 @@ p.tres {
 @media (max-width: 768px) {
 #quem-somos {
     background-position: right, center;
+    background-attachment: fixed;
 }
 
 /* p.um, p.dois, p.tres {
