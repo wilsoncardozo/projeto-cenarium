@@ -640,6 +640,7 @@ p.tres {
     background-position: right, center;
     background-attachment: fixed;
     background-size: cover;
+    overflow: scroll;
     width: 100%;
 }
 
