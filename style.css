@@ -188,7 +188,7 @@ section.natureza {
     width: 100vw;
 }
 
-section.natureza > p {
+section.natureza p {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
@@ -305,7 +305,8 @@ footer a:hover {
 }
 
 div.localizacao {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: space-around;
     align-items: center;
     background-color: var(--cor0);
@@ -374,6 +375,26 @@ img.logo-rodape {
         background-attachment: scroll;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    
+    div.localizacao {
+        grid-template-columns: 1fr;
+        height: 450px;
+    }
+
+    .endereco {
+        padding: 15px;
+        text-align: center;
+    }
+
+    span.google {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .google iframe {
+        margin-bottom: 30px;
     }
 }
 
@@ -516,12 +537,9 @@ img.logo-rodape {
     }
 
     .google iframe {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 95vw;
         height: 300px;
-        padding-bottom: 50px;
+        margin: 50px, 0px;
     }
 
     div.localizacao {
@@ -574,7 +592,7 @@ img.logo-rodape {
 
 #quem-somos {
     background-image: url('./imagens/quemsomos.jpg');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 }
 
