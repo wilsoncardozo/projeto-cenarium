@@ -460,6 +460,7 @@ img.logo-rodape {
     section#paralax {
         background-attachment: scroll;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 
     section.natureza p {
