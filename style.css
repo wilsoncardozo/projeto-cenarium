@@ -99,7 +99,8 @@ span.logo {
     font-size: 1.1em;
     
 }
-div .cenarium {
+
+picture.cenarium {
     height: 300px;
     object-fit: fill;
 }
@@ -639,9 +640,6 @@ p.tres {
 @media (max-width: 768px) {
 #quem-somos {
     background-position: right, center;
-    /* background-attachment: fixed; */
-    /* background-size: cover; */
-    overflow:scroll;
 }
 
 /* p.um, p.dois, p.tres {
@@ -775,7 +773,6 @@ h2.galeriah2 span {
         margin: 10px;
         max-width: 100%;
     }
-
 }
 
 .lightbox {
