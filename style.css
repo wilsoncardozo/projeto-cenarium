@@ -195,10 +195,8 @@ section.natureza p {
     font-size: 2em;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.245);
-    height: 500px;
     width: 500px;
-    padding-top: 40px;
-    padding-left: 20px;
+    padding: 20px 20px 20px 20px;
     margin-top: 110px;
     margin-left: 30px;
 }
