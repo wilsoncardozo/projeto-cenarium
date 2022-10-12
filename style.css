@@ -589,10 +589,15 @@ img.logo-rodape {
 
 /* QUEM SOMOS */
 
-#quem-somos {
-    background-image: url('./imagens/quemsomos.jpg');
+/* #quem-somos {
+    background: url('./imagens/quemsomos.jpg') center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+} */
+
+#quem-somos {
+    background: #FFFFFF url('./imagens/quemsomos.jpg') center center no-repeat;
     background-size: cover;
 }
 
