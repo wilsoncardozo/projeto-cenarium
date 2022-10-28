@@ -678,6 +678,7 @@ p.tres {
 p.tres {
     display: flex;
     float: none;
+    margin-bottom: 50px;
 }
 }
 
