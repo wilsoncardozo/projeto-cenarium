@@ -433,7 +433,7 @@ img.logo-rodape {
         text-transform: uppercase;
         color: var(--cor0);
         width: 180px;
-        line-height: 3.5;
+        line-height: 1.5;
     }
 
     ul.nav-list {
