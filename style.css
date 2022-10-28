@@ -148,7 +148,7 @@ h1 span {
 
 .texto1 {
     grid-row: 1/4;
-    padding: 0px 105px 0px;
+    padding: 0px 108px 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8em;
     line-height: 1.6;
@@ -743,7 +743,6 @@ h2.galeriah2 span {
 
 .item-galeria img:hover {
     transform: scale(1.05);
-
 }
 
 .w-2 {
@@ -759,6 +758,10 @@ h2.galeriah2 span {
     .container-galeria {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 50vh;
+    }
+
+    .item-galeria img:hover {
+        transform: none;
     }
 
     .w-2 {
