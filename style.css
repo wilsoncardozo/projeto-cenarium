@@ -951,9 +951,7 @@ textarea::placeholder {
     }
 }
 
-/* ÁREA DO USUÁRIO 
-Texto tem um erro de português
-*/
+/* ÁREA DO USUÁRIO */
 
 #usuario {
     background-color: var(--cor0);
