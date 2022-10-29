@@ -100,10 +100,10 @@ span.logo {
     
 }
 
-/* picture.cenarium {
+picture.cenarium {
     height: 300px;
     object-fit: fill;
-} */
+}
 
 .cenarium img {
     display: flex;
