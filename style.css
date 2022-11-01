@@ -177,7 +177,7 @@ h2 {
 
 section#paralax {
     color: white;
-    background-image: url('./imagens/paralax.JPG');
+    background-image: url('./imagens/paralax.webp');
     background-position: center;
 }
 
@@ -598,7 +598,7 @@ img.logo-rodape {
 } */
 
 #quem-somos {
-    background: #FFFFFF url('./imagens/quemsomos.jpg') center center no-repeat;
+    background: #FFFFFF url('./imagens/quemsomos.webp') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -973,3 +973,20 @@ textarea::placeholder {
     margin-top: 50px;
 }
 }
+
+/*
+.home-background {
+    background: url(/imagens/home-img.jpg) center center no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+@media (max-width: 768px) {
+    .home-background {
+        background: url(/imagens/home-img-pq.jpg) center center no-repeat;
+        background-size: cover;
+        height: 30vh;
+    }
+} */
+
+/* Alternativa enquanto não usa React com JS - Não é uma boa prática e não fica exatamente igual mas pra fazer upload talvez funcione */
