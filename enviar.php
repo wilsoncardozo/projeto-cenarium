@@ -7,6 +7,11 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+// Honeypot: se o campo invisível for preenchido, assume que é bot e encerra
+if (!empty($_POST['empresa'])) {
+    exit;
+}
+
 $nome = $_POST['name'];
 $email = $_POST['email'];
 $mensagem = $_POST['message'];

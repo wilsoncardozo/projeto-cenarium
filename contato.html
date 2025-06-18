@@ -45,7 +45,10 @@
                     <input type="email" class="inp" name="email" placeholder="E-mail" required>
                 </span>
                 <textarea class="txt" cols="30" rows="6" name="message" placeholder="Mensagem" required></textarea>
-                <input type="submit" value="Enviar" class="botao-enviar">
+                    <!-- Campo honeypot invisível -->
+                    <input type="text" name="empresa" style="display:none">
+                    
+                    <input type="submit" value="Enviar" class="botao-enviar">
                 </form>
 
                 <!-- <form class="formulario" action="https://formsubmit.co/contato@residencialcenarium.com.br" method="POST">
