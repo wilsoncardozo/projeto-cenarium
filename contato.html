@@ -37,7 +37,18 @@
     <main> 
         <section class="contato-form">
             <div>
-                <form class="formulario" action="https://formsubmit.co/contato@residencialcenarium.com.br" method="POST">
+                <form class="formulario" action="enviar.php" method="POST">
+                <h4>Contato</h4>
+                <p>Entre em contato para obter informações e ficar por dentro das atualizações!</p>
+                <span>
+                    <input type="text" class="inp" name="name" placeholder="Nome" required>
+                    <input type="email" class="inp" name="email" placeholder="E-mail" required>
+                </span>
+                <textarea class="txt" cols="30" rows="6" name="message" placeholder="Mensagem" required></textarea>
+                <input type="submit" value="Enviar" class="botao-enviar">
+                </form>
+
+                <!-- <form class="formulario" action="https://formsubmit.co/contato@residencialcenarium.com.br" method="POST">
                     <h4>Contato</h4>
                     <p>Entre em contato para obter  informações e ficar por dentro das atualizações!
                     </p>
@@ -49,7 +60,7 @@
                     <input type="hidden" name= "_captcha" value="false" class="botao-enviar">
                     <input type="hidden" name="_next" value="https://residencialcenarium.com.br/contato.html">
                     <input type="submit" value="Enviar"class="botao-enviar">
-                </form>
+                </form> -->
             </div>
 
         </section>
