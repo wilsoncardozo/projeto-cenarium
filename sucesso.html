@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Mensagem Enviada</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mensagem-sucesso {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .mensagem-sucesso h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 42px;
+            background-color: var(--cor0);
+            color: var(--cor2);
+            margin-bottom: 20px;
+        }
+        .mensagem-sucesso p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            color: var(--cor1);
+        }
+        .mensagem-sucesso a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: var(--cor1);
+            color: var(--cor0);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid var(--cor2);
+            font-weight: bold;
+        }
+        .mensagem-sucesso a:hover {
+            border-width: 2px;
+            transition: 200ms ease;
+        }
+    </style>
+</head>
+<body id="usuario">
+    <header>
+        <nav>
+            <span class="logo">
+                <img class="logo-img" src="imagens/logo.png" alt="logo">
+                <p class="logo-txt">Residencial Cenarium</p>
+            </span>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="area-do-usuario.html">Área do usuário</a></li>
+            </ul>
+        </nav>
+        <div class="contato">
+            <img src="imagens/foto-contato.jpg" alt="foto-capa">
+        </div>
+    </header>
+
+    <main>
+        <section class="mensagem-sucesso">
+            <h1>✅ Mensagem enviada com sucesso!</h1>
+            <p>Obrigado por entrar em contato. Em breve retornaremos com mais informações.</p>
+            <a href="index.html">Voltar à página inicial</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="final">
+            <span class="texto-a-esquerda">
+                <p>Nossa política de privacidade</p>
+            </span>
+            <img class="logo-rodape" src="imagens/logo.png" alt="logo">
+            <span class="texto-a-direita">
+                <p>Desenvolvido por <a href="https://residencialcenarium.com.br" target="_blank">PWA WEB</a></p>
+            </span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

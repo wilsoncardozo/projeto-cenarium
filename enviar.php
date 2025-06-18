@@ -19,6 +19,7 @@ $mensagem = $_POST['message'];
 $mail = new PHPMailer(true);
 
 try {
+    $mail->CharSet = 'UTF-8';
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
@@ -40,7 +41,7 @@ try {
     ";
 
     $mail->send();
-    header('Location: contato.html');
+    header('Location: sucesso.html');
     exit;
 } catch (Exception $e) {
     echo "Erro ao enviar: {$mail->ErrorInfo}";
